@@ -780,6 +780,222 @@ To secure data in transit between AWS services, traffic must use encrypted proto
 
 ---
 
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 5)
+
+---
+
+### Question 36  
+A global marketing company hosts videos in AWS and wants all users worldwide to view these videos with low latency and high performance.
+
+Which AWS service should they use to meet this requirement?
+
+A) Amazon S3 Standard storage only  
+B) AWS Global Accelerator  
+C) Amazon CloudFront  
+D) AWS Direct Connect
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** C
+
+**Explanation:**  
+Amazon CloudFront is a Content Delivery Network (CDN) that caches content at global edge locations to reduce latency for end users, enabling fast delivery of videos worldwide. S3 alone doesn’t provide edge caching. Global Accelerator optimizes traffic routing but is not a CDN. Direct Connect provides private networking, not CDN.
+
+</details>
+
+---
+
+### Question 37  
+Which pillar of the AWS Well-Architected Framework focuses on the ability of a system to recover from failures and dynamically meet demand?
+
+A) Security  
+B) Reliability  
+C) Performance Efficiency  
+D) Operational Excellence
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+The Reliability pillar emphasizes designing systems that recover quickly from failures, scale automatically, and dynamically acquire resources as needed. Security deals with protecting data and systems, Performance Efficiency focuses on efficient use of resources, and Operational Excellence involves run and monitor systems effectively.
+
+</details>
+
+---
+
+### Question 38  
+What are two primary benefits of migrating to the AWS Cloud? (Choose two)
+
+A) Increased upfront capital expenses  
+B) Improved scalability  
+C) Fixed monthly costs  
+D) Increased agility  
+E) Limited global reach
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answers:** B, D
+
+**Explanation:**  
+AWS Cloud provides improved scalability by enabling resources to scale on-demand, and increased agility through rapid provisioning and deployment. Migrating to AWS eliminates large upfront capital expenses and reduces fixed monthly costs. AWS supports global reach, not limits it.
+
+</details>
+
+---
+
+### Question 39  
+A company wants to replace on-premises compute servers with AWS serverless services to quickly adopt new technologies.
+
+Which pillar of the AWS Well-Architected Framework does this strategy represent?
+
+A) Cost Optimization  
+B) Innovation  
+C) Operational Excellence  
+D) Performance Efficiency
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+This approach aligns with the Innovation pillar, emphasizing the adoption of new technologies to improve products and delivery speed. Serverless architectures reduce infrastructure management and enable faster innovation. While other pillars are important, Innovation covers rapid tech adoption.
+
+</details>
+
+---
+
+### Question 40  
+A company has multiple AWS accounts for different departments, each with Reserved Instances (RIs) purchased.
+
+How can the company optimize cost usage across accounts?
+
+A) Use AWS Organizations consolidated billing to share RIs across accounts  
+B) Purchase separate RIs for each account without sharing  
+C) Use Spot Instances to cover all loads  
+D) Manually monitor and transfer RIs monthly
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Organizations with consolidated billing allows sharing of Reserved Instances across linked accounts, optimizing utilization of RIs and reducing waste. Separate RI purchases limit flexibility. Spot Instances are suited for interruptible workloads but not guaranteed capacity. Manual transfers are not supported.
+
+</details>
+
+---
+
+### Question 41  
+A company wants to monitor user activity and API usage on AWS for security auditing.
+
+Which AWS service provides detailed logging of all API calls?
+
+A) Amazon CloudWatch  
+B) AWS CloudTrail  
+C) Amazon Inspector  
+D) AWS Config
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+AWS CloudTrail records detailed logs of all API calls made in an AWS account, including user identity, time, source IP, and services accessed. CloudWatch monitors metrics and logs but does not track API calls. Inspector scans for vulnerabilities. Config monitors resource configurations.
+
+</details>
+
+---
+
+### Question 42  
+Which AWS service helps customers assess the security vulnerabilities of their EC2 instances?
+
+A) AWS Shield  
+B) Amazon Inspector  
+C) AWS WAF  
+D) AWS IAM
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+Amazon Inspector automatically assesses the security state of EC2 instances, identifies vulnerabilities, and provides prioritized findings. Shield protects against DDoS attacks. WAF filters web traffic. IAM manages access permissions.
+
+</details>
+
+---
+
+### Question 43  
+A company requires multi-factor authentication (MFA) for all users accessing the AWS Management Console for enhanced security.
+
+How can this be implemented?
+
+A) Enable MFA on individual IAM users  
+B) Enable MFA on the root AWS account only  
+C) Override IAM policies with SCPs  
+D) Use AWS Config
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+MFA can be enabled for each IAM user to add an additional authentication factor, enhancing security for console access. Enabling MFA only on the root account is insufficient. SCPs restrict permissions but don’t enforce MFA directly. Config monitors compliance but doesn’t enforce user login methods.
+
+</details>
+
+---
+
+### Question 44  
+Which AWS pricing model delivers the lowest cost for applications with flexible start and end times but can tolerate interruptions?
+
+A) On-Demand Instances  
+B) Spot Instances  
+C) Reserved Instances  
+D) Dedicated Hosts
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+Spot Instances allow customers to bid for spare AWS capacity at significant cost savings, but AWS can reclaim these instances with little notice, causing interruption. On-Demand charges full price, Reserved Instances require upfront commitment, Dedicated Hosts provide physical server isolation.
+
+</details>
+
+---
+
+### Question 45  
+Which AWS service automates infrastructure provisioning using templates to create and manage resources as code?
+
+A) AWS Elastic Beanstalk  
+B) AWS CloudFormation  
+C) AWS Auto Scaling  
+D) AWS OpsWorks
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+AWS CloudFormation allows defining infrastructure as code using JSON/YAML templates to provision and manage resources consistently. Elastic Beanstalk simplifies deployment but uses CloudFormation under the hood. Auto Scaling adjusts compute capacity dynamically. OpsWorks provides configuration management with Chef/Puppet.
+
+</details>
+
+---
+
+
 
 
 
