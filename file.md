@@ -995,6 +995,232 @@ AWS CloudFormation allows defining infrastructure as code using JSON/YAML templa
 
 ---
 
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 6)
+
+---
+
+### Question 46  
+A company is designing a new cloud application and wants to ensure it can quickly adapt to changing business requirements by releasing new features rapidly without affecting availability.
+
+Which AWS Well-Architected Framework pillar is most relevant to this goal?
+
+A) Security  
+B) Operational Excellence  
+C) Cost Optimization  
+D) Performance Efficiency  
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+Operational Excellence focuses on running and monitoring systems to deliver business value and continually improving processes. It encourages frequent, small, and reversible changes to quickly iterate features without impacting availability, supporting rapid innovation and improvement.
+
+</details>
+
+---
+
+### Question 47  
+A company needs to protect sensitive customer data stored in AWS. They require encryption for data both at rest and in transit and want to ensure access is limited to authorized users only.
+
+Which two pillars of the AWS Well-Architected Framework does this scenario address? (Choose two)
+
+A) Operational Excellence  
+B) Security  
+C) Reliability  
+D) Cost Optimization  
+E) Performance Efficiency
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answers:** B, C
+
+**Explanation:**  
+Security pillar focuses on protecting information through strong access controls and encryption. Reliability ensures resources are resilient and maintain availability even under failures, indirectly protecting data integrity. Encrypting data at rest and in transit and limiting access are core security concerns.
+
+</details>
+
+---
+
+### Question 48  
+An architecture team is reviewing their system for handling traffic spikes. The system must scale automatically based on demand and recover quickly from failures.
+
+Which AWS Well-Architected Framework pillar focuses on these concerns?
+
+A) Reliability  
+B) Performance Efficiency  
+C) Cost Optimization  
+D) Sustainability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+The Reliability pillar ensures that a system recovers quickly from failures, automatically scales to meet demand, and continues operating effectively during unexpected interruptions, thereby maintaining system availability.
+
+</details>
+
+---
+
+### Question 49  
+A startup wants to minimize its AWS costs by ensuring it only pays for resources when needed and avoids overprovisioning.
+
+Which AWS Well-Architected Framework pillar best supports this goal?
+
+A) Cost Optimization  
+B) Performance Efficiency  
+C) Operational Excellence  
+D) Security
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+The Cost Optimization pillar focuses on avoiding unnecessary expenditure by selecting cost-effective resources, scaling resources appropriately, and continuously monitoring cost. This helps the startup pay only for what they actually use.
+
+</details>
+
+---
+
+### Question 50  
+A company wants to reduce the environmental impact of its cloud workloads by maximizing resource utilization and using energy-efficient resources.
+
+Which AWS Well-Architected Framework pillar is focused on this goal?
+
+A) Cost Optimization  
+B) Performance Efficiency  
+C) Sustainability  
+D) Operational Excellence
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** C
+
+**Explanation:**  
+The Sustainability pillar encourages reducing the environmental impact of cloud workload operations by efficient resource usage, minimizing waste, and maximizing utilization to lower carbon footprint and energy consumption.
+
+</details>
+
+---
+
+### Question 51  
+During a system architecture review, the team identifies that manual processes for deployments are causing errors and delays.
+
+Which pillar of the AWS Well-Architected Framework should the team focus on to improve automation and reduce manual intervention?
+
+A) Operational Excellence  
+B) Security  
+C) Reliability  
+D) Cost Optimization
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Operational Excellence emphasizes automation of operational processes ("operations as code") to improve efficiency, reduce errors, and enable rapid, reliable deployments, supporting business agility.
+
+</details>
+
+---
+
+### Question 52  
+A multinational company deploying applications globally wants to ensure low latency and high throughput for its customers worldwide.
+
+Which AWS Well-Architected Framework pillar is concerned with optimizing system performance for such users?
+
+A) Performance Efficiency  
+B) Cost Optimization  
+C) Security  
+D) Reliability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Performance Efficiency deals with selecting the right resource types, efficient use of infrastructure, and responding effectively to changes in system demand, crucial for applications with global reach requiring low latency.
+
+</details>
+
+---
+
+### Question 53  
+A company enforces multi-factor authentication (MFA), encryption, and strict identity and access management policies to secure their AWS environment.
+
+Which AWS Well-Architected Framework pillar aligns with these activities?
+
+A) Security  
+B) Operational Excellence  
+C) Reliability  
+D) Sustainability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Security pillar centers on identity management, preventive controls, encryption, and ensuring data protection across all layers. MFA and encryption are key security best practices.
+
+</details>
+
+---
+
+### Question 54  
+A cloud team wants to continuously monitor configuration changes and ensure compliance with corporate policies.
+
+Which AWS Well-Architected Framework pillar supports this ongoing governance capability?
+
+A) Operational Excellence  
+B) Security  
+C) Reliability  
+D) Cost Optimization
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Operational Excellence runs and monitors systems to deliver business value, including continuous monitoring of resources and processes to ensure compliance and prompt response to changes.
+
+</details>
+
+---
+
+### Question 55  
+An online retailer notices fluctuating workload patterns throughout the day and seeks to automate capacity adjustments to optimize expense without impacting user experience.
+
+Which AWS Well-Architected Framework pillar primarily addresses this?
+
+A) Operational Excellence  
+B) Reliability  
+C) Cost Optimization  
+D) Sustainability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** C
+
+**Explanation:**  
+Cost Optimization emphasizes purchasing and using resources only as needed, aligning resource use with demand to reduce waste and cost fluctuations while maintaining performance.
+
+</details>
+
+---
+
+
 
 
 
