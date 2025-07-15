@@ -556,6 +556,231 @@ AWS Config continuously monitors resource configurations, records changes, evalu
 
 ---
 
-# (More question batches can be generated on your request)
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 4)
+
+---
+
+### Question 26  
+A startup uses Amazon DynamoDB for their customer database. They notice increased costs due to high read capacity, yet many reads are repetitive for the same items.
+
+Which solution best improves cost efficiency while maintaining data availability?
+
+A) Enable DynamoDB Accelerator (DAX) caching  
+B) Switch to Amazon RDS for relational querying  
+C) Increase DynamoDB read capacity units (RCUs) permanently  
+D) Use Amazon ElastiCache for session storage
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+DynamoDB Accelerator (DAX) is an in-memory cache for DynamoDB that reduces repeated read requests to the database, lowering costs and improving response times. Switching to RDS involves more management, increasing read capacity permanently raises costs, and ElastiCache is more suitable for caching application session state.
+
+</details>
+
+---
+
+### Question 27  
+A financial firm requires strict control over who can deploy resources in their AWS environment and wants a central place to enforce policies across multiple accounts.
+
+Which AWS feature helps implement this governance?
+
+A) AWS Organizations Service Control Policies (SCPs)  
+B) AWS IAM permission boundaries on each user  
+C) AWS CloudTrail centralized logging  
+D) AWS Config rules per account
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Service Control Policies (SCPs) in AWS Organizations apply permission guardrails across all accounts in an organization, centrally enforcing what actions are permitted regardless of user IAM policies within those accounts. IAM permission boundaries are scoped per user, CloudTrail logs activity but does not enforce permissions, Config rules monitor compliance.
+
+</details>
+
+---
+
+### Question 28  
+A developer is building a mobile app that needs user authentication, signup, and access control integrated with social identity providers like Facebook and Google.
+
+Which AWS service should streamline this process?
+
+A) AWS IAM  
+B) Amazon Cognito  
+C) AWS Directory Service  
+D) AWS Shield
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+Amazon Cognito provides user pools for authentication and federation with social identity providers, allowing secure user management without building these features from scratch. IAM manages permissions for AWS resources. Directory Service integrates with on-premises directory. AWS Shield handles DDoS protection.
+
+</details>
+
+---
+
+### Question 29  
+A media company is migrating a video processing workload to AWS and wants a compute option that automatically adjusts capacity based on incoming video file size and processing demand.
+
+Which AWS compute service best fits this?
+
+A) Amazon EC2 Auto Scaling groups  
+B) AWS Lambda with event-driven triggers  
+C) AWS Elastic Beanstalk with manual scaling  
+D) Amazon Lightsail instances
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+AWS Lambda provides automatic scaling in response to events, such as file uploads, scaling precisely with the workload without provisioning servers. EC2 Auto Scaling groups scale based on metrics but require provisioning and management. Elastic Beanstalk and Lightsail require more manual intervention.
+
+</details>
+
+---
+
+### Question 30  
+A healthcare provider wants to archive medical records securely and cost-effectively for regulatory compliance for 7 years, with rare but immediate access if needed.
+
+Which AWS storage class best meets this requirement?
+
+A) Amazon S3 Glacier Instant Retrieval  
+B) Amazon S3 Standard  
+C) Amazon S3 Glacier Deep Archive  
+D) Amazon EBS volumes
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+S3 Glacier Instant Retrieval provides low-cost archival storage with milliseconds retrieval latency, ideal for rarely accessed but immediately needed data. Standard is expensive for long-term archive, Glacier Deep Archive is cheaper but retrieval takes hours, EBS volumes are for block storage.
+
+</details>
+
+---
+
+### Question 31  
+A company wants to automate security best practices checks and receive alerts for critical risks in their AWS accounts.
+
+Which service provides real-time security recommendations and integrates with AWS Security Hub?
+
+A) AWS Trusted Advisor  
+B) Amazon Macie  
+C) Amazon Inspector  
+D) AWS Shield
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** C
+
+**Explanation:**  
+Amazon Inspector automatically assesses AWS resources for vulnerabilities and deviations from best practices and feeds findings into AWS Security Hub for centralized management. Trusted Advisor provides best practice checks but is less security-centric, Macie discovers sensitive data in S3, and Shield protects against DDoS.
+
+</details>
+
+---
+
+### Question 32  
+A company is launching a new web app and wants to ensure secure end-user access using HTTPS, with minimal effort to manage SSL/TLS certificates.
+
+Which AWS service simplifies certificate provisioning and management?
+
+A) AWS Certificate Manager (ACM)  
+B) AWS Key Management Service (KMS)  
+C) Amazon Route 53  
+D) Amazon CloudFront
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Certificate Manager lets you provision, manage, and deploy SSL/TLS certificates for use with other AWS services without manual certificate renewal or deployment. KMS manages encryption keys, Route 53 handles DNS, and CloudFront distributes content.
+
+</details>
+
+---
+
+### Question 33  
+During an audit, a company needs a report detailing who accessed which AWS resources in the past 90 days.
+
+Which AWS service provides this audit trail?
+
+A) AWS CloudTrail  
+B) AWS Config  
+C) Amazon CloudWatch  
+D) AWS IAM Access Analyzer
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS CloudTrail records API calls and user activity across AWS accounts, enabling auditing of who performed what actions and when. Config tracks resource configurations. CloudWatch monitors metrics and logs. Access Analyzer helps identify resource sharing.
+
+</details>
+
+---
+
+### Question 34  
+A company wants to reduce network latency from users in Asia to their new web application hosted in the US East region.
+
+Which AWS service can optimize the routing of traffic and improve performance?
+
+A) Amazon CloudFront  
+B) AWS Global Accelerator  
+C) Amazon Route 53 Latency Routing  
+D) VPC Peering Connections
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+AWS Global Accelerator directs users' traffic to the optimal AWS endpoint using the AWS global network, improving performance and availability. CloudFront is a CDN for static/dynamic content, Route 53 latency routing chooses the lowest latency region, but Global Accelerator provides fixed entry points with optimized routing. VPC Peering connects VPCs.
+
+</details>
+
+---
+
+### Question 35  
+A company’s security policy requires all data in transit to be secured when moving between AWS services within the same region.
+
+Which method ensures secure data transfer?
+
+A) Enabling SSL/TLS endpoints or HTTPS protocols for service communication  
+B) Using unencrypted HTTP traffic within the VPC since it’s private  
+C) Using Amazon Macie to encrypt data in transit  
+D) Storing data only on encrypted EBS volumes
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+To secure data in transit between AWS services, traffic must use encrypted protocols such as SSL/TLS (HTTPS). Plain HTTP is unencrypted even inside VPC. Macie is for data classification, EBS encryption applies only to data at rest.
+
+</details>
+
+---
+
+
+
 
 
