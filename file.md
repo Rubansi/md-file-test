@@ -1220,6 +1220,1126 @@ Cost Optimization emphasizes purchasing and using resources only as needed, alig
 
 ---
 
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 7)
+
+---
+
+### Question 56  
+A company is designing its cloud infrastructure to ensure rapid recovery from regional failures while maintaining global availability.
+
+Which AWS architecture strategy aligns best with this goal?
+
+A) Deploy resources in multiple Availability Zones within one region  
+B) Deploy resources across multiple AWS regions with automated failover  
+C) Use a single, highly available data center with backups  
+D) Use Spot Instances in a single region to save costs
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+Deploying resources across multiple AWS regions with automated failover ensures high availability even if an entire region fails. Multi-AZ deployments increase fault tolerance within one region but do not protect against regional outages. A single data center risks total failure; Spot Instances are low cost but not guaranteed.
+
+</details>
+
+---
+
+### Question 57  
+Your team wants to enforce strong authentication and centralized authorization for AWS accounts managed under AWS Organizations.
+
+Which AWS service combination best supports this approach?
+
+A) AWS IAM roles assigned independently in each account  
+B) AWS Single Sign-On (AWS SSO) integrated with AWS Organizations  
+C) Manually creating IAM users per account with strong passwords  
+D) Use AWS CloudTrail for managing identities
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+AWS Single Sign-On (AWS SSO) integrated with AWS Organizations enables centralized authentication and user management across multiple AWS accounts with consistent access controls. IAM roles per account require manual management, and CloudTrail is for auditing, not identity management.
+
+</details>
+
+---
+
+### Question 58  
+A company wants to regularly assess its AWS environment for compliance with internal security policies and industry regulations.
+
+Which AWS service automates continuous compliance monitoring and rule enforcement?
+
+A) AWS Config  
+B) AWS CloudTrail  
+C) AWS Shield  
+D) AWS WAF
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Config continuously monitors and records AWS resource configurations, evaluates them against compliance rules, and alerts on violations. CloudTrail logs API calls but does not enforce compliance. Shield protects against DDoS, WAF manages web traffic filtering.
+
+</details>
+
+---
+
+### Question 59  
+A development team wants to implement Infrastructure as Code (IaC) to deploy AWS resources consistently and repeatedly.
+
+Which AWS service is primarily used for this purpose?
+
+A) AWS CloudFormation  
+B) AWS Elastic Beanstalk  
+C) Amazon CloudWatch  
+D) AWS Trusted Advisor
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS CloudFormation allows defining infrastructure via templates enabling automated, repeatable deployment and management of AWS resources. Elastic Beanstalk automates app deployments but does not provide general infrastructure templates. CloudWatch monitors metrics, Trusted Advisor gives best practice recommendations.
+
+</details>
+
+---
+
+### Question 60  
+Your security team requires all AWS API calls to be logged across multiple accounts for auditing purposes.
+
+Which AWS feature allows central management and storage of these logs?
+
+A) AWS CloudTrail Organization Trails  
+B) AWS Config Aggregator  
+C) Amazon GuardDuty Findings  
+D) AWS IAM Access Analyzer
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS CloudTrail Organization Trails enable centralized collection and storage of CloudTrail logs across all accounts within an AWS Organization, facilitating consolidated auditing. Config Aggregator provides configuration data, GuardDuty monitors threats, and Access Analyzer reviews resource policies.
+
+</details>
+
+---
+
+### Question 61  
+A company uses Amazon S3 to store critical data and wants to protect against accidental deletion and overwrites while supporting regulatory compliance.
+
+Which S3 feature provides write-once-read-many (WORM) capabilities and retention?
+
+A) Object Lock in Compliance Mode  
+B) Server-Side Encryption with AWS KMS  
+C) Versioning enabled  
+D) Lifecycle policies to archive data
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+S3 Object Lock in Compliance Mode implements WORM protection, preventing object deletion or alteration during a retention period, helping meet compliance requirements. Server-Side Encryption protects data confidentiality, Versioning preserves object versions but doesn’t enforce retention. Lifecycle policies automate storage class transitions.
+
+</details>
+
+---
+
+### Question 62  
+Your organization wants to optimize costs by identifying idle or underutilized EC2 instances and unused EBS volumes.
+
+Which AWS tool provides automated cost optimization recommendations?
+
+A) AWS Trusted Advisor  
+B) AWS Config  
+C) AWS Cost Explorer  
+D) Amazon CloudWatch
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Trusted Advisor analyzes your AWS environment and offers recommendations on underutilized or idle resources to optimize cost, including EC2 and EBS. Cost Explorer provides cost analysis but no direct recommendations. Config monitors compliance; CloudWatch monitors performance metrics.
+
+</details>
+
+---
+
+### Question 63  
+A startup wants to protect their AWS workloads against distributed denial-of-service (DDoS) attacks without additional operational overhead.
+
+Which AWS service should they enable?
+
+A) AWS Shield Standard  
+B) AWS WAF  
+C) Amazon GuardDuty  
+D) AWS Firewall Manager
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Shield Standard provides automatic, always-on protection against common DDoS attacks at no additional cost and requires no deployment effort, making it ideal for startups. WAF allows customizable web filtering rules. GuardDuty detects threats, Firewall Manager manages firewall rules but needs configuration.
+
+</details>
+
+---
+
+### Question 64  
+A company wants a managed service to host and run containerized web applications without managing servers or clusters directly.
+
+Which AWS service is the best option?
+
+A) Amazon Elastic Kubernetes Service (EKS)  
+B) AWS Fargate  
+C) Amazon EC2  
+D) AWS Lambda
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+AWS Fargate is a serverless compute engine for containers allowing users to run containers without managing servers or clusters. EKS requires cluster management, EC2 requires full server management, and Lambda is for serverless functions but not container orchestration.
+
+</details>
+
+---
+
+### Question 65  
+A global enterprise is designing a hybrid cloud environment and wants to extend their on-premises network directly and securely to AWS.
+
+Which AWS service facilitates this connectivity?
+
+A) AWS Direct Connect  
+B) AWS VPN CloudHub  
+C) Amazon VPC Peering  
+D) AWS Transit Gateway
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Direct Connect establishes a dedicated network connection from on-premises data centers to AWS, providing higher bandwidth and lower latency than internet VPN. VPN CloudHub supports communications between VPNs, VPC Peering connects VPCs within AWS, Transit Gateway centralizes VPC connectivity.
+
+</details>
+
+---
+
+# If you want me to continue, please prompt!
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 8)
+
+---
+
+### Question 66  
+A company wants to monitor application health and set alarms for abnormal increases in error rates of their AWS Lambda functions.
+
+Which AWS service should be used to achieve this?
+
+A) Amazon CloudWatch  
+B) AWS Config  
+C) AWS CloudTrail  
+D) AWS Trusted Advisor
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon CloudWatch collects monitoring data from AWS resources and applications, including Lambda metrics such as error counts and duration. It can be configured to send alarms when thresholds are crossed. Config monitors resource compliance, CloudTrail logs API activity, Trusted Advisor provides best practice checks.
+
+</details>
+
+---
+
+### Question 67  
+An e-commerce company plans to migrate its databases to AWS and aims to minimize downtime during the migration.
+
+Which AWS service supports minimal downtime by enabling continuous data replication?
+
+A) AWS Database Migration Service (DMS)  
+B) Amazon RDS snapshot restore  
+C) AWS Snowball  
+D) AWS DataSync
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS DMS supports continuous data replication with change data capture, enabling minimal downtime database migrations. Snapshot restores and Snowball involve longer downtime or are for bulk data transfer. DataSync is used for file transfers rather than database migration.
+
+</details>
+
+---
+
+### Question 68  
+A startup wants to host a containerized web application on AWS without managing the underlying infrastructure.
+
+Which combination of AWS services should they use?
+
+A) Amazon EC2 and Amazon ECS  
+B) AWS Fargate and Amazon ECS  
+C) AWS Lambda and Amazon S3  
+D) Amazon EKS and Amazon EC2
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+AWS Fargate with Amazon ECS allows running containers serverlessly without managing infrastructure or clusters. EC2 with ECS or EKS requires managing servers. Lambda is for serverless functions, S3 is object storage.
+
+</details>
+
+---
+
+### Question 69  
+A company wants to control internet access for Amazon EC2 instances in a private subnet while allowing outbound internet access for software updates.
+
+Which solution achieves this?
+
+A) Configure a NAT Gateway in a public subnet and route outbound traffic through it  
+B) Attach an internet gateway to the private subnet  
+C) Enable IPv6 on the private subnet  
+D) Assign public IPs directly to instances in the private subnet
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Placing a NAT Gateway in a public subnet allows instances in private subnets to initiate outbound internet connections (for updates) while blocking inbound internet traffic. Private subnets cannot have internet gateways; public IPs are not assigned to private subnet instances.
+
+</details>
+
+---
+
+### Question 70  
+Your team is implementing a data lake on AWS and wants to provide scalable, serverless querying capabilities without managing infrastructure.
+
+Which AWS service best suits this use case?
+
+A) Amazon Athena  
+B) Amazon Redshift  
+C) Amazon EMR  
+D) AWS Glue
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon Athena is a serverless interactive query service for analyzing data in Amazon S3 using standard SQL without managing infrastructure. Redshift is a managed data warehouse, EMR is a big data platform that requires cluster management, and Glue is an ETL service.
+
+</details>
+
+---
+
+### Question 71  
+A company needs to improve their data security by ensuring that S3 objects are encrypted using customer-managed keys with rotation and auditing.
+
+Which AWS service and feature combination fulfills this requirement?
+
+A) Amazon S3 Server-Side Encryption with AWS KMS customer-managed keys (SSE-KMS)  
+B) Amazon S3 Server-Side Encryption with S3 managed keys (SSE-S3)  
+C) AWS KMS with CloudHSM integration  
+D) AWS Secrets Manager
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+SSE-KMS allows encryption of S3 objects using customer-managed keys in AWS KMS that support automatic rotation, detailed usage logs, and fine-grained access control. SSE-S3 uses AWS-managed keys without rotation control. CloudHSM is for dedicated hardware security modules. Secrets Manager manages secrets, not data encryption.
+
+</details>
+
+---
+
+### Question 72  
+A cloud architect needs to implement serverless REST APIs with automatic scaling and pay only for actual usage.
+
+Which AWS services combination is ideal?
+
+A) AWS API Gateway + AWS Lambda  
+B) Amazon EC2 + Elastic Load Balancer  
+C) AWS Elastic Beanstalk + Amazon RDS  
+D) Amazon ECS + AWS Fargate
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+API Gateway and Lambda together provide serverless, fully managed REST APIs that automatically scale and charge based on usage. EC2 and ELB require managing servers, Elastic Beanstalk manages app deployment but isn’t fully serverless, ECS and Fargate are container services.
+
+</details>
+
+---
+
+### Question 73  
+A company wants to prevent accidental deletions of critical objects in an S3 bucket while allowing normal data updates.
+
+Which feature should be enabled?
+
+A) S3 Versioning with MFA Delete  
+B) Server-Side Encryption  
+C) Bucket Policy allowing all actions  
+D) Lifecycle Policy for automatic deletion after 30 days
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+S3 Versioning combined with MFA Delete requires multi-factor authentication to delete objects or versions, preventing accidental or malicious deletions while allowing regular object overwrites. Encryption protects data confidentiality, bucket policies control access, lifecycle policies delete objects but don't prevent accidental deletion.
+
+</details>
+
+---
+
+### Question 74  
+Your organization requires centralized management of firewall rules across many AWS accounts and VPCs.
+
+Which AWS service simplifies this task?
+
+A) AWS Firewall Manager  
+B) AWS WAF  
+C) AWS Network Firewall  
+D) Amazon GuardDuty
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Firewall Manager provides centralized management of firewall rules including AWS WAF, Network Firewall, and Shield Advanced across multiple accounts and VPCs in an Organization. WAF and Network Firewall enforce rules but need to be managed per resource. GuardDuty is a threat detection service.
+
+</details>
+
+---
+
+### Question 75  
+A company needs to automate patching of operating systems and applications on EC2 instances across different environments.
+
+Which AWS service automates this process?
+
+A) AWS Systems Manager Patch Manager  
+B) AWS Config  
+C) AWS CloudTrail  
+D) Amazon Inspector
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Systems Manager Patch Manager automates patching of operating systems and software on managed EC2 instances according to defined schedules and compliance policies. Config monitors configuration compliance, CloudTrail logs API activity, Inspector assesses vulnerabilities but doesn’t patch.
+
+</details>
+
+---
+
+# Please indicate when to generate batch 9.
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 9)
+
+---
+
+### Question 76  
+Your company designs systems that automatically recover from failure and rapidly scale to meet demand. You want to continually improve your processes and minimize the impact of changes.
+
+Which AWS Well-Architected Framework pillar best supports these goals?
+
+A) Operational Excellence  
+B) Security  
+C) Reliability  
+D) Performance Efficiency
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Operational Excellence emphasizes running and monitoring systems to deliver business value and improve supporting processes and procedures. It includes making frequent, small, reversible changes and learning from failures to continuously improve operations.
+
+</details>
+
+---
+
+### Question 77  
+An enterprise must protect sensitive customer data stored in AWS with strong identity management, encryption, and audit trails.
+
+Which two AWS Well-Architected Framework pillars cover these requirements? (Choose two)
+
+A) Security  
+B) Reliability  
+C) Performance Efficiency  
+D) Cost Optimization  
+E) Operational Excellence
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answers:** A, E
+
+**Explanation:**  
+Security focuses on protecting information through strong authentication, encryption, and traceability. Operational Excellence supports automated security best practices and strong audit procedures to maintain compliance and continuous improvement.
+
+</details>
+
+---
+
+### Question 78  
+Your organization seeks to build fault-tolerant cloud infrastructure that scales automatically and avoids single points of failure.
+
+Which pillar of the AWS Well-Architected Framework guides these design principles?
+
+A) Reliability  
+B) Performance Efficiency  
+C) Cost Optimization  
+D) Security
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Reliability is about designing systems to recover from infrastructure or service disruptions, dynamically acquire resources, and automatically scale to handle changes in demand, ensuring continuous operation.
+
+</details>
+
+---
+
+### Question 79  
+A startup aims to control their cloud spending by matching resource allocation to business needs and avoiding unnecessary expenses.
+
+Which AWS Well-Architected Framework pillar is key to this objective?
+
+A) Cost Optimization  
+B) Operational Excellence  
+C) Security  
+D) Sustainability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Cost Optimization encourages selecting cost-effective resources, monitoring costs, and scaling to prevent overprovisioning, ensuring the business pays only for what it uses.
+
+</details>
+
+---
+
+### Question 80  
+Your team wants to minimize the environmental impact of your cloud workloads by maximizing efficiency and reducing wasted resources.
+
+Which pillar of the AWS Well-Architected Framework addresses this?
+
+A) Sustainability  
+B) Performance Efficiency  
+C) Operational Excellence  
+D) Security
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Sustainability focuses on reducing environmental impact by optimizing resource utilization, increasing efficiency, and minimizing energy consumption associated with cloud workloads.
+
+</details>
+
+---
+
+### Question 81  
+A developer team is tasked with automating deployment pipelines and reducing manual processes that cause errors.
+
+Which AWS Well-Architected Framework pillar supports adopting automation and reducing manual intervention?
+
+A) Operational Excellence  
+B) Cost Optimization  
+C) Security  
+D) Reliability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Operational Excellence values “operations as code” and automating routine tasks to increase efficiency, reduce human error, and enable frequent, reliable deployments.
+
+</details>
+
+---
+
+### Question 82  
+Your company wants to optimize performance globally by selecting suitable AWS resources and scaling them based on workload requirements.
+
+Which AWS Well-Architected Framework pillar should guide this effort?
+
+A) Performance Efficiency  
+B) Security  
+C) Reliability  
+D) Cost Optimization
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Performance Efficiency focuses on using the right resource types, monitoring performance metrics, and scaling efficiently to meet business needs while maintaining optimal responsiveness.
+
+</details>
+
+---
+
+### Question 83  
+You enforce identity and access controls with multi-factor authentication (MFA), encryption for data at rest/transit, and intrusion detection.
+
+Which AWS Well-Architected Framework pillar aligns with these practices?
+
+A) Security  
+B) Operational Excellence  
+C) Reliability  
+D) Performance Efficiency
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+The Security pillar emphasizes protecting data and systems through strong identity management, encryption, multi-layer controls, monitoring, and automated incident response.
+
+</details>
+
+---
+
+### Question 84  
+Continuous resource configuration monitoring and compliance enforcement are essential for your cloud environment governance.
+
+Which AWS Well-Architected Framework pillar emphasizes this capability?
+
+A) Operational Excellence  
+B) Security  
+C) Cost Optimization  
+D) Reliability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Operational Excellence includes the continual measurement and control of cloud resource configurations and processes to ensure compliance and efficiency aligned with business goals.
+
+</details>
+
+---
+
+### Question 85  
+Your application experiences variable workloads across the day, and you aim to balance user experience with controlling costs.
+
+Which AWS Well-Architected Framework pillar helps you design solutions for flexible, demand-driven resource usage?
+
+A) Cost Optimization  
+B) Operational Excellence  
+C) Performance Efficiency  
+D) Sustainability
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Cost Optimization encourages dynamic scaling and cost monitoring strategies to align resource provisioning with workload demands, minimizing unnecessary expenses while maintaining user experience.
+
+</details>
+
+---
+
+# You can prompt me when you want to generate batch 10 of questions.
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 10)
+
+---
+
+### Question 86  
+A company plans to deploy a global web application with users distributed worldwide. They want to minimize latency and provide fast content delivery without managing complex infrastructure.
+
+Which AWS service should be used?
+
+A) Amazon S3 Standard Storage  
+B) Amazon CloudFront  
+C) AWS Direct Connect  
+D) Amazon Route 53
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** B
+
+**Explanation:**  
+Amazon CloudFront is a Content Delivery Network (CDN) that caches content at edge locations globally to reduce latency for users worldwide. S3 is storage without caching. Direct Connect is for dedicated network connections. Route 53 handles DNS routing but does not cache content.
+
+</details>
+
+---
+
+### Question 87  
+You need to ensure that all AWS account users authenticate using multi-factor authentication (MFA) before accessing the AWS Management Console.
+
+How can this be enforced?
+
+A) Enable MFA for each IAM user  
+B) Enable MFA on the AWS root account only  
+C) Use AWS Config rules to enforce MFA  
+D) Use AWS CloudTrail to monitor MFA usage
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Enabling MFA on each IAM user ensures an additional authentication factor for all users. Root account MFA alone is insufficient. Config rules can monitor but not enforce MFA. CloudTrail records API logs, including MFA use, but does not enforce it.
+
+</details>
+
+---
+
+### Question 88  
+A company wants to migrate its legacy on-premises SQL Server database to AWS with minimal downtime and ongoing data replication.
+
+Which service to choose?
+
+A) AWS Database Migration Service (DMS)  
+B) Amazon RDS snapshot import  
+C) AWS Snowball  
+D) AWS DataSync
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS DMS enables minimal downtime migrations with continuous replication of data changes (Change Data Capture). RDS snapshot import requires downtime. Snowball is for bulk data transport. DataSync handles file data transfer, not databases.
+
+</details>
+
+---
+
+### Question 89  
+An application running on EC2 needs to securely access an S3 bucket without embedding credentials in the code.
+
+Which approach best meets this requirement?
+
+A) Attach an IAM role with S3 permissions to the EC2 instance profile  
+B) Store AWS access keys in environment variables  
+C) Use root account credentials in the code  
+D) Use Amazon Cognito to generate temporary credentials
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+IAM roles attached to EC2 instances provide temporary, automatically rotated credentials for accessing AWS services securely without hardcoding credentials. Environment variables or root credentials pose security risks. Cognito is for user authentication, not EC2-to-S3 access.
+
+</details>
+
+---
+
+### Question 90  
+You want to automate the provisioning and updating of your cloud infrastructure consistently across environments.
+
+Which AWS service should you use?
+
+A) AWS CloudFormation  
+B) AWS Systems Manager  
+C) AWS IAM  
+D) Amazon CloudWatch
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS CloudFormation enables Infrastructure as Code (IaC) allowing declarative provisioning and updating of AWS resources consistently using templates. Systems Manager manages instances, IAM manages permissions, CloudWatch monitors metrics.
+
+</details>
+
+---
+
+### Question 91  
+A company needs to encrypt sensitive data stored in Amazon S3, wanting full control over the encryption keys including key rotation and audit logs.
+
+Which solution should they implement?
+
+A) Server-Side Encryption with AWS KMS Customer-Managed Keys (SSE-KMS)  
+B) Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)  
+C) Client-side encryption only  
+D) Use AWS Secrets Manager
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+SSE-KMS allows customers to manage their own keys, control key policies, enable rotation, and audit key usage through CloudTrail. SSE-S3 uses AWS-managed keys without control. Client-side encryption requires external key management. Secrets Manager stores secrets, not encrypts objects.
+
+</details>
+
+---
+
+### Question 92  
+You need to analyze and secure sensitive data stored in S3, detect potential data leaks, and monitor compliance.
+
+Which AWS service supports this use case?
+
+A) Amazon Macie  
+B) AWS Shield  
+C) AWS WAF  
+D) Amazon GuardDuty
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon Macie uses machine learning to automatically discover, classify, and protect sensitive data stored in S3. Shield protects against DDoS, WAF filters web traffic, GuardDuty detects threats but not specific data classification.
+
+</details>
+
+---
+
+### Question 93  
+A company seeks to protect web applications from common web exploits such as SQL injection and cross-site scripting.
+
+Which AWS service should be configured?
+
+A) AWS WAF (Web Application Firewall)  
+B) AWS Shield  
+C) Amazon Inspector  
+D) AWS Firewall Manager
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS WAF allows creation of customizable rules to filter and block malicious web requests such as SQL injection and cross-site scripting attacks. Shield protects against DDoS, Inspector assesses EC2 vulnerabilities, Firewall Manager manages firewall rules at scale.
+
+</details>
+
+---
+
+### Question 94  
+Your company requires centralized logging of all AWS API activities for security auditing across multiple AWS accounts.
+
+Which AWS feature should you use?
+
+A) AWS CloudTrail Organization Trails  
+B) AWS Config Aggregator  
+C) Amazon CloudWatch Logs  
+D) AWS IAM Access Analyzer
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+CloudTrail Organization Trails enable the collection of API call logs from all accounts in an AWS Organization in a central S3 bucket to support audit and compliance requirements. Config Aggregator collects resource config data, CloudWatch Logs collects logs but not API calls organization-wide, Access Analyzer helps with permissions analysis.
+
+</details>
+
+---
+
+### Question 95  
+A development team needs to implement secure, scalable user authentication for a mobile app that supports social logins and federated identities.
+
+Which AWS service simplifies this process?
+
+A) Amazon Cognito  
+B) IAM Users and Groups  
+C) AWS Organizations  
+D) AWS Directory Service
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon Cognito provides user sign-up, sign-in, and access control, supporting social login providers and federated identity pools, simplifying integration into mobile and web apps. IAM manages AWS users, Organizations manages accounts, Directory Service interfaces with on-premises directories.
+
+</details>
+
+---
+
+# Ready to continue with batch 11 — just prompt me!
+# AWS Certified Cloud Practitioner Advanced Practice Questions (Batch 11)
+
+---
+
+### Question 96  
+A company wants to implement automated backups for their Amazon RDS databases that allow point-in-time recovery within a retention period of 30 days.
+
+Which AWS feature should they configure?
+
+A) Enable RDS automated backups with a 30-day retention period  
+B) Perform manual snapshots every 24 hours  
+C) Enable Amazon S3 bucket versioning  
+D) Use AWS Backup for manual snapshot creation only
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Enabling automated backups on RDS allows point-in-time recovery within the specified retention period automatically. Manual snapshots must be initiated by the user and do not provide continuous recovery. S3 versioning applies to object storage, and AWS Backup provides centralized backup management but automated RDS backups are the native feature for PITR.
+
+</details>
+
+---
+
+### Question 97  
+Which AWS service provides a fully-managed, pay-as-you-go petabyte-scale data warehouse solution?
+
+A) Amazon Redshift  
+B) Amazon Athena  
+C) Amazon EMR  
+D) AWS Glue
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon Redshift is a fully managed, petabyte-scale data warehouse that enables fast querying and analytics of large datasets. Athena is serverless query service on S3, EMR is managed Hadoop/Spark cluster service, and Glue is a managed ETL service.
+
+</details>
+
+---
+
+### Question 98  
+Your organization wants to deploy a containerized microservices architecture and needs Kubernetes orchestration without managing the control plane.
+
+Which AWS service is the best fit?
+
+A) Amazon Elastic Kubernetes Service (EKS)  
+B) Amazon ECS with Fargate  
+C) AWS Lambda  
+D) Amazon Lightsail
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon EKS provides managed Kubernetes control plane so you don't have to manage infrastructure. ECS with Fargate is container orchestration but not Kubernetes-based. Lambda is serverless functions, and Lightsail is simplified cloud with limited container support.
+
+</details>
+
+---
+
+### Question 99  
+A company wants a scalable environment for running scheduled batch processing jobs with managed infrastructure and no server management.
+
+Which AWS service best supports this requirement?
+
+A) AWS Batch  
+B) AWS Lambda  
+C) Amazon EC2 Auto Scaling  
+D) Amazon ECS with EC2
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Batch enables efficient running of batch computing workloads by provisioning and managing compute resources automatically according to job requirements. Lambda supports event-driven, short duration functions. EC2 Auto Scaling manages instance scaling but requires manual job orchestration. ECS manages containers but not specifically batch jobs.
+
+</details>
+
+---
+
+### Question 100  
+An organization wants to simplify cost allocation and budgeting by grouping AWS resources across multiple accounts by project or team.
+
+Which AWS feature helps achieve this?
+
+A) AWS Cost Allocation Tags  
+B) AWS Budgets  
+C) AWS Organizations  
+D) AWS Trusted Advisor
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Cost Allocation Tags are metadata tags assigned to AWS resources to organize and track costs by categories such as projects or teams, enabling detailed cost reports. Budgets monitor costs but don't organize costs at resource level. Organizations manage accounts, Trusted Advisor gives recommendations.
+
+</details>
+
+---
+
+### Question 101  
+A developer wants to build a serverless application that triggers AWS Lambda functions in response to real-time data streams from connected IoT devices.
+
+Which AWS service should be used to ingest and process these streams?
+
+A) Amazon Kinesis Data Streams  
+B) Amazon SQS  
+C) Amazon Simple Notification Service (SNS)  
+D) AWS IoT Core
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** D
+
+**Explanation:**  
+AWS IoT Core enables secure device connectivity and real-time data ingestion from IoT devices into AWS and can trigger Lambda functions on events. Kinesis is for high-throughput streaming data but not IoT-specific. SQS provides message queuing, SNS is pub/sub messaging.
+
+</details>
+
+---
+
+### Question 102  
+Which AWS service helps you classify and protect sensitive information like personally identifiable information (PII) stored in S3 buckets?
+
+A) Amazon Macie  
+B) AWS Shield  
+C) AWS WAF  
+D) AWS Config
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon Macie uses ML to identify, classify and protect sensitive data such as PII in Amazon S3. Shield is for DDoS protection, WAF is for web app firewall, Config monitors configuration compliance.
+
+</details>
+
+---
+
+### Question 103  
+Your application demands a database solution capable of storing and retrieving key-value and document data with single-digit millisecond latency.
+
+Which AWS database service fits best?
+
+A) Amazon DynamoDB  
+B) Amazon RDS  
+C) Amazon Redshift  
+D) Amazon Aurora
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+Amazon DynamoDB is a fast, fully managed NoSQL database service designed for key-value and document data models with low latency. RDS/Aurora are relational databases, Redshift is a data warehouse.
+
+</details>
+
+---
+
+### Question 104  
+A cloud architect needs a service that automatically provisions and configures infrastructure resources based on high-level application requirements using blueprints and templates.
+
+Which AWS service best matches this need?
+
+A) AWS Elastic Beanstalk  
+B) AWS CloudFormation  
+C) AWS OpsWorks  
+D) AWS Systems Manager
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Elastic Beanstalk automates deployment by provisioning resources based on application requirements and configuration templates, handling scaling, load balancing, and monitoring. CloudFormation is more granular infrastructure as code. OpsWorks is configuration management using Chef/Puppet. Systems Manager manages operational tasks.
+
+</details>
+
+---
+
+### Question 105  
+Which AWS service enables the creation of virtual private networks (VPN) connections between an on-premises network and an Amazon VPC over the public internet?
+
+A) AWS Site-to-Site VPN  
+B) AWS Direct Connect  
+C) Amazon VPC Peering  
+D) AWS Transit Gateway
+
+<details>
+<summary>Show Answer & Explanation</summary>
+
+**Correct Answer:** A
+
+**Explanation:**  
+AWS Site-to-Site VPN provides encrypted VPN tunnels over the internet to connect on-premises networks to AWS VPCs securely. Direct Connect provides dedicated private connections. VPC Peering connects VPCs within or across accounts. Transit Gateway centralizes inter-VPC routing.
+
+</details>
+
+---
+
+# Await your go-ahead for batch 12.
 
 
 
